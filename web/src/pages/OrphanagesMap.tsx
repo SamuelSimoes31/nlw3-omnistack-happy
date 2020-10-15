@@ -10,10 +10,10 @@ import mapIcon from '../utils/mapIcon';
 import api from '../services/api';
 
 interface Orphanage {
-  id: number,
-  latitude: number,
-  longitude: number,
-  name: string
+  id: number;
+  latitude: number;
+  longitude: number;
+  name: string;
 }
 
 function OrphanagesMap() {
