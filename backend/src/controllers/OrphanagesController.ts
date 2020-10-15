@@ -11,6 +11,16 @@ export default {
     return res.json(orphanages);
   },
 
+  async show(req: Request,res: Response) {
+    const { id } = req.params;
+
+    const orphanagesRepository = getRepository(Orphanage);
+
+    const orphanage = await orphanagesRepository.findOneOrFail(id);
+
+    return res.json(orphanage);
+  },
+
   async create(req: Request,res: Response) {
     const {
       name,
