@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/users', (req,res) => {
+app.post('/orphanages', (req,res) => {
   return res.json({message: 'hello'});
 });
 
